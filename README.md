@@ -1,5 +1,9 @@
 # Email-Header-Analyzer
-The Email Header Analyzer is a simple Python script that helps extract and analyze important information from raw email headers.
+About Me
+Hello! I’m FARHAT Khalifa, a passionate Cybersecurity student and enthusiast eager to explore and learn more about email security and threat analysis.
+This project is part of my journey to understand how emails work behind the scenes and how we can analyze their headers to uncover important clues that help fight cyber threats.
+
+Project Description
 The Email Header Analyzer is a simple Python script that helps extract and analyze important information from raw email headers.
 It can detect sender IP addresses, trace email routing paths, and show basic metadata like From, To, and Subject fields.
 
@@ -15,21 +19,6 @@ Display sender, recipient, and subject information.
 Detect suspicious keywords like "malware", "phishing", and "ransomware" in the email body.
 
 Simple command-line interface for easy input and analysis.
-
-How to Use
-Clone or download this repository.
-
-Run the script with Python 3:
-
-nginx
-Copier
-Modifier
-python email_header_analyzer.py
-Paste the full email header when prompted. End input by entering a blank line.
-
-Paste the email body when prompted. End input by entering a blank line.
-
-View the analysis results.
 
 Why This Project?
 Email headers contain valuable data that helps security analysts detect spoofing, phishing, and other malicious activities.
@@ -47,9 +36,6 @@ Add more sophisticated heuristics for phishing detection.
 Contact
 Feel free to reach out if you want to collaborate or discuss cybersecurity topics!
 
-LinkedIn: [(https://www.linkedin.com/in/khalifa-farhat-72783622a/)
+LinkedIn: https://www.linkedin.com/in/khalifa-farhat-72783622a/ 
 
-Email: [Khalifa.farhat03@gmail.com]
-
-Thank you for checking out my project!
-— FARHAT Khalifa
+Email: khalifa.farhat03@gmail.com 
