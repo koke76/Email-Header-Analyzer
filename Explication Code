@@ -1,0 +1,96 @@
+Explanation of Email Header Analyzer Code
+1. What this script does:
+It takes a raw email header and email body as input.
+
+Extracts important info like:
+
+Sender and recipient emails.
+
+Subject of the email.
+
+All the “Received” lines showing the path the email took.
+
+IP addresses involved in sending the email.
+
+Checks the email body for simple suspicious words (like "malware" or "phishing").
+
+Prints all this info nicely for the user to understand.
+
+2. Main parts of the code:
+a) import re
+We use the re module for regular expressions, which helps us search for patterns like email addresses or IP addresses inside the text.
+
+b) extract_ip_addresses(header)
+This function looks for all IP addresses inside the header.
+
+It uses a regex pattern to find numbers in the format x.x.x.x (where x is 0-255).
+
+Returns a list of all IP addresses found.
+
+c) extract_received_lines(header)
+Email headers have multiple lines starting with “Received:” which show how the email traveled from server to server.
+
+This function collects all those “Received:” lines into a list.
+
+d) extract_basic_info(header)
+Finds the From, To, and Subject lines in the header.
+
+Uses regex to find the content after those words.
+
+Returns a dictionary with those values (or "N/A" if not found).
+
+e) check_suspicious_keywords(email_body)
+Looks for common bad words related to malware or phishing inside the email body.
+
+It converts the body to lowercase and checks if words like "malware", "phishing", "trojan", etc. appear.
+
+If yes, it warns the user by printing a message.
+
+f) analyze_email(header, body)
+This is the main function that calls the other functions.
+
+Prints the extracted info step by step:
+
+Basic email info (From, To, Subject).
+
+The Received header lines.
+
+All IP addresses found.
+
+Suspicious keywords warning (if any).
+
+g) The if __name__ == "__main__": block
+This means the code inside runs only if you run this script directly.
+
+It asks the user to paste the email header line by line, until a blank line is entered.
+
+Then asks to paste the email body similarly.
+
+Finally, it calls analyze_email() to print the results.
+
+3. How this helps and what you learn:
+You practice working with multi-line user input.
+
+You learn to use regular expressions to find patterns in text.
+
+You get familiar with how email headers contain useful info for security analysis.
+
+You understand basic concepts of malware/phishing detection by keyword spotting.
+
+You improve skills in breaking down problems into small functions.
+
+4. Limitations
+It doesn’t actually scan attachments or deep content for malware.
+
+Keyword checking is very basic and can’t replace real antivirus or threat intelligence.
+
+It’s a starting point to understand email analysis and can be expanded.
+
+5. Next steps (if you want to improve)
+Parse full email format with Python’s email module.
+
+Check URLs in email body for malicious links.
+
+Scan attachments or integrate with antivirus APIs.
+
+Add GUI or web interface for easier use.
