@@ -3,6 +3,10 @@ About Me
 Hello! I’m FARHAT Khalifa, a passionate Cybersecurity student and enthusiast eager to explore and learn more about email security and threat analysis.
 This project is part of my journey to understand how emails work behind the scenes and how we can analyze their headers to uncover important clues that help fight cyber threats.
 
+This project was inspired by my learning journey in cybersecurity.
+I wrote and tested the code myself to understand email headers and basic phishing detection.
+Some parts were assisted by AI tools, but all logic and modifications are my own.
+
 Project Description
 The Email Header Analyzer is a simple Python script that helps extract and analyze important information from raw email headers.
 It can detect sender IP addresses, trace email routing paths, and show basic metadata like From, To, and Subject fields.
