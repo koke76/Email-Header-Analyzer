@@ -33,6 +33,10 @@ Develop a web or GUI version for easier use.
 
 Add more sophisticated heuristics for phishing detection.
 
+![image](https://github.com/user-attachments/assets/ab09cf14-2fe5-4e14-9204-2e828e1b70f7)
+
+
+
 Contact
 Feel free to reach out if you want to collaborate or discuss cybersecurity topics!
 
