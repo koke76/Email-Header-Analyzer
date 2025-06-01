@@ -9,6 +9,8 @@ It can detect sender IP addresses, trace email routing paths, and show basic met
 
 Additionally, the script performs a basic check for suspicious keywords in the email body that may indicate phishing or malware attempts.
 
+![download](https://github.com/user-attachments/assets/a950baa6-b727-4c3e-bf9d-896874564cc2)
+
 Features
 Extract all IP addresses from the email header.
 
